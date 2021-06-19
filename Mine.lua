@@ -1,7 +1,16 @@
-For(i = 16, i = 0, i - 1)
-  turtle.dig() 
-  turtle.forward() 
-  turtle.digUp()
+gold = "minecraft:gold_ore"
+iron = "minecraft:iron_ore"
+coal = "minecraft:coal_ore"
+diamond = "minecraft:diamond_ore"
+redstone = "minecraft:_ore"
+
+For i = 16,0,-1
+do 
+  theBlock = turtle.inspect()
+  if theBlock == gold or then
+    turtle.dig() 
+    turtle.forward() 
+    turtle.digUp()
   if(inventory is full)
     Place end chest behind 
     Open end chest
