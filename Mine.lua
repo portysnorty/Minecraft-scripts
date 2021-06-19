@@ -1,15 +1,7 @@
-Something = Get location z
-RightSpot = 11
-
-For(MoveDown = Something - RightSpot, MoveDown=0, MoveDown-1)
-  Mine down 1
-  Move down 1 
-end 
-
 For(i = 16, i = 0, i - 1)
-  Mine front 
-  Move forward 
-  Mine up
+  turtle.dig() 
+  turtle.forward() 
+  turtle.digUp()
   if(inventory is full)
     Place end chest behind 
     Open end chest
